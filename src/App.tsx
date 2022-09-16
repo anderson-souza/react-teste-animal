@@ -144,28 +144,24 @@ const App: React.FC = () => {
       data: dadosAguia,
       sumFunc: () => {
         setAguiaCount((aguiaCount) => aguiaCount + 1);
-        console.log("Count Aguia");
       },
     },
     {
       data: dadosLobo,
       sumFunc: () => {
         setLoboCount((loboCount) => loboCount + 1);
-        console.log("Count Lobo");
       },
     },
     {
       data: dadosGolfinho,
       sumFunc: () => {
         setGolfinhoCount((golfinhoCount) => golfinhoCount + 1);
-        console.log("Count Golfinho");
       },
     },
     {
       data: dadosTubarao,
       sumFunc: () => {
         setTubaraoCount((tubaraoCount) => tubaraoCount + 1);
-        console.log("Count Tubarão");
       },
     },
   ];
@@ -204,7 +200,6 @@ const App: React.FC = () => {
       }
       questions.push(rowQuestion);
     }
-    console.log("Questions", questions);
     return questions;
   };
 
@@ -245,8 +240,11 @@ const App: React.FC = () => {
         </Stack>
         {currentQuestion == totalQuestions && (
           <>
-            Resultado: Aguia: {aguiaCount} Lobo: {loboCount} Golfinho:{" "}
-            {golfinhoCount} Tubarão: {tubaraoCount}
+            <Typography variant="h5">Resultado</Typography>
+            <p>Aguia: {aguiaCount}</p>
+            <p>Lobo: {loboCount}</p>
+            <p>Golfinho: {golfinhoCount}</p>
+            <p>Tubarão: {tubaraoCount}</p>
           </>
         )}
       </Grid>
