@@ -217,7 +217,7 @@ const App: React.FC = () => {
       style={{ minHeight: "100vh" }}
     >
       <Grid item xs={3}>
-        <Typography variant="h3">Descubra seu perfil animal</Typography>
+        <Typography variant="h3">Descubra seu perfil animal!</Typography>
         <Stack
           spacing={2}
           direction="column"
